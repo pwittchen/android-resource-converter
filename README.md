@@ -5,7 +5,7 @@ Motivation
 ----------
 In international projects sometimes there's a need to send resource files to the client in order to have translated strings. Client doesn't have to understand XML notation and editing two or more files at the same time is unconvenient. It's easier to send file which can be edited in MS Excel or Libre Office Calc.
 
-Scripts in this repository are able to convert xml resources to a single *.csv file ready to open in software for common users (`xml2csv.py`). In addition, there's another script, which can generate xml resource files from *.csv file (`csv2xml.py`).
+Scripts in this repository are able to convert Android xml resources to a single *.csv file ready to open in software for common users (`xml2csv.py`). In addition, there's another script, which can generate xml resource files from *.csv file (`csv2xml.py`).
 
 Usage
 -----
