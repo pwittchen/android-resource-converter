@@ -12,8 +12,12 @@ Usage
 
 ### Generating *.csv file
 
-```python
+```txt
 python xml2csv.py <directory_with_xml_files>
+```
+Example:
+```txt
+python xml2csv.py input
 ```
 
 **Sample output**
@@ -26,8 +30,12 @@ app_name;My application;Moja aplikacja
 
 ### Generating *.xml files
 
-```python
+```txt
 $ python csv2xml.py <file_with_translations>.csv
+```
+Example:
+```txt
+$ python csv2xml.py translations.csv
 ```
 
 **Sample output**
