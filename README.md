@@ -7,6 +7,13 @@ In international projects sometimes there's a need to send resource files to the
 
 Scripts in this repository are able to convert Android xml resources to a single *.csv file ready to open in software for common users. In addition, there's another script, which can generate xml resource files from *.csv file.
 
+Requirements
+------------
+
+To satisfy requirements, run the following command:
+
+`pip install -r requirements.txt`
+
 Usage
 -----
 
