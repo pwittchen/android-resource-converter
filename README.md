@@ -13,11 +13,11 @@ Usage
 ### Generating *.csv file
 
 ```txt
-python xml2csv.py <directory_with_xml_files>
+$ python xml2csv.py <directory_with_xml_files>
 ```
 Example:
 ```txt
-python xml2csv.py input
+$ python xml2csv.py input
 ```
 
 **Sample output**
