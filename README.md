@@ -12,7 +12,7 @@ Requirements
 
 To satisfy requirements, run the following command:
 
-`pip install -r requirements.txt`
+`$ pip install -r requirements.txt`
 
 Usage
 -----
