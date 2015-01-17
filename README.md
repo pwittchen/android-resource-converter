@@ -1,5 +1,5 @@
 # Android Resource Converter
-Simple Python scripts converting Android xml resources to csv file and backwards
+Simple Python scripts converting Android xml resources with translations to csv file and backwards
 
 Motivation
 ----------
