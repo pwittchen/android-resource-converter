@@ -29,6 +29,8 @@ $ python xml2csv.py resources
 
 **Sample output**
 
+`translations.csv`
+
 ```txt
 key;strings_english.xml;strings_polish.xml
 hello_world;Hello World!;Witaj Świecie!
