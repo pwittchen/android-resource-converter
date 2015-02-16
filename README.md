@@ -69,3 +69,10 @@ $ python csv2xml.py translations.csv
 </resources>
 ```
 
+Caveats
+-------
+
+- Polish characters in Unicode may need to be converted to regular charaters (e.g. `&#346`; to `Ś`)
+- Scripts may bahave differently on MS Windows system and may need some adjustments
+- Output of the scripts may be different on MS Windows system and may need some adjustments
+
