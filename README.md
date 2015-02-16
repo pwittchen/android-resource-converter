@@ -22,7 +22,7 @@ Usage
 ```txt
 $ python xml2csv.py <directory_with_xml_files>
 ```
-**Example**:
+**Example**
 ```txt
 $ python xml2csv.py resources
 ```
@@ -42,7 +42,7 @@ app_name;My application;Moja aplikacja
 ```txt
 $ python csv2xml.py <file_with_translations>.csv
 ```
-**Example**:
+**Example**
 ```txt
 $ python csv2xml.py translations.csv
 ```
