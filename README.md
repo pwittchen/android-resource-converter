@@ -20,11 +20,11 @@ Usage
 ### Generating *.csv file
 
 ```txt
-$ python xml2csv.py <directory_with_xml_files>
+$ ./xml2csv.py <directory_with_xml_files>
 ```
 **Example**
 ```txt
-$ python xml2csv.py resources
+$ ./xml2csv.py resources
 ```
 
 **Sample output**
