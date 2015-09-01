@@ -1,3 +1,5 @@
+#!/usr/bin/python -u
+
 # usage: $ python csv2xml.py <file_with_translations>.csv
 
 import csv
