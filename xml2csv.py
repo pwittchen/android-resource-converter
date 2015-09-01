@@ -1,3 +1,5 @@
+#!/usr/bin/python -u
+
 # usage: $ python xml2csv.py <directory_with_xml_files>
 
 from xml.dom import minidom
