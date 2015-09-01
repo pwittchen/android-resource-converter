@@ -40,11 +40,11 @@ app_name;My application;Moja aplikacja
 ### Generating *.xml files
 
 ```txt
-$ python csv2xml.py <file_with_translations>.csv
+$ ./csv2xml.py <file_with_translations>.csv
 ```
 **Example**
 ```txt
-$ python csv2xml.py translations.csv
+$ ./csv2xml.py translations.csv
 ```
 
 **Sample output**
