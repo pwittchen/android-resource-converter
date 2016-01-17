@@ -64,7 +64,7 @@ $ ./csv2xml.py translations.csv
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <resources>
-  <string name="hello_world">Witaj &#346;wiecie!</string>
+  <string name="hello_world">Witaj Świecie!</string>
   <string name="app_name">Moja aplikacja</string>
 </resources>
 ```
@@ -72,7 +72,6 @@ $ ./csv2xml.py translations.csv
 Caveats
 -------
 
-- Polish characters in Unicode may need to be converted to regular charaters (e.g. `&#346`; to `Ś`)
 - Scripts may bahave differently on MS Windows system and may need some adjustments
 - Output of the scripts may be different on MS Windows system and may need some adjustments
 
