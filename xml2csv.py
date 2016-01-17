@@ -19,19 +19,31 @@ for xml_file in xml_files:
 
 for xml_parsed_file in xml_parsed_files:
     for translation_key in xml_parsed_file:
-        translations.append({translation_key.attributes['name'].value: translation_key.childNodes[0].nodeValue})
+        # for quotation nodes
+        if len(translation_key.childNodes) > 0:
+            translations.append({translation_key.attributes['name'].value: translation_key.childNodes[0].nodeValue})
 
 for translation in translations:
     for key, value in translation.items():
         if key not in translations_dictionary:
             translations_dictionary[key] = [value]
         else:
-            translations_dictionary[key].append(value)
+            if value not in translations_dictionary[key]:
+                translations_dictionary[key].append(value)
 
-writer = csv.writer(open("translations.csv", "w"), delimiter=';', quoting=csv.QUOTE_NONE)
+writer = csv.writer(open("translations.csv", "w"), delimiter='\t', quotechar='',
+                    skipinitialspace=False, quoting=csv.QUOTE_NONE)
 writer.writerow(['key'] + xml_files)
-for translation_key in translations_dictionary:
+# Sort one values, such as translatable="false" elements
+for translation_key in sorted(translations_dictionary, key=lambda k: len(translations_dictionary[k]), reverse=True):
+    print "\ntranslation_key: " + translation_key
+
     translation_values = []
     for translation in translations_dictionary[translation_key]:
-        translation_values.append(translation.encode('utf-8'))
+        entersRemoved = " ".join(translation.encode('utf-8').split("\n"))
+        multiSpacesRemoved = " ".join(entersRemoved.split())
+        tabReplaced = "\\t".join(multiSpacesRemoved.split("\t"))
+        translation_values.append(tabReplaced)
+        print "translation : " + tabReplaced
+
     writer.writerow([translation_key] + translation_values)
