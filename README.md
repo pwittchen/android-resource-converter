@@ -32,10 +32,12 @@ $ ./xml2csv.py resources
 `translations.csv`
 
 ```txt
-key;strings_english.xml;strings_polish.xml
-hello_world;Hello World!;Witaj Świecie!
-app_name;My application;Moja aplikacja
+key strings_english.xml strings_polish.xml
+hello_world Hello World!    Witaj Świecie!
+app_name    My application  Moja aplikacja
 ```
+
+**Note**: These "space" delimiters are fine and can be modified in the script. Nevertheless, Libre Office Calc reads it properly.
 
 ### Generating *.xml files
 
